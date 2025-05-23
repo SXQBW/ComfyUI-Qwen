@@ -1,0 +1,229 @@
+{
+  "id": "25deea97-b045-4864-b1c1-5c22cd489536",
+  "revision": 0,
+  "last_node_id": 7,
+  "last_link_id": 7,
+  "nodes": [
+    {
+      "id": 6,
+      "type": "VideoUploader",
+      "pos": [
+        9877.630859375,
+        4150.16943359375
+      ],
+      "size": [
+        332.8246765136719,
+        391.8119812011719
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "video_path",
+          "type": "VIDEO_PATH",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoUploader"
+      },
+      "widgets_values": [
+        "Athlete.mp4",
+        "image"
+      ],
+      "color": "#2e2f32",
+      "bgcolor": "#1a1b1e"
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        9471.2734375,
+        3843.522216796875
+      ],
+      "size": [
+        386.6109924316406,
+        697.8842163085938
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ce6fabe6406c8d47f55107571ff29a959c56db7b.jpg",
+        "image"
+      ],
+      "color": "#2e2f32",
+      "bgcolor": "#1a1b1e"
+    },
+    {
+      "id": 5,
+      "type": "QwenVisionParser",
+      "pos": [
+        9877.630859375,
+        3844.045654296875
+      ],
+      "size": [
+        332.1490783691406,
+        256.5614013671875
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 6
+        },
+        {
+          "name": "video_path",
+          "shape": 7,
+          "type": "VIDEO_PATH",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "QwenVisionParser"
+      },
+      "widgets_values": [
+        "Qwen2.5-VL-7B-Instruct-abliterated",
+        "🚫 None (Original Precision)",
+        "Please provide a detailed description of all the contents.",
+        1216,
+        0.5,
+        0.9,
+        1
+      ],
+      "color": "#2e2f32",
+      "bgcolor": "#1a1b1e"
+    },
+    {
+      "id": 2,
+      "type": "ShowText|pysssss",
+      "pos": [
+        10229.5107421875,
+        3844.045654296875
+      ],
+      "size": [
+        287.17840576171875,
+        697.064208984375
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Show Text",
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "The image consists of two distinct sections:\n\n1. **Top Section**: \n   - This section features a person with dark hair, wearing a blue jacket and gloves, and holding what appears to be a fishing rod or a similar tool. The background suggests an outdoor setting, likely a body of water, as the blue tones and ripples resemble water.\n   - There is Chinese text overlaid on the image in yellow, which reads \"我靠 袁华,\" which translates to \"Damn, Yuan Hua\" in English, indicating a reaction or exclamation.\n\n2. **Bottom Section**:\n   - This section shows a stylized, cartoonish character with exaggerated features. The character has a blueish, almost glowing complexion, with bright, glowing eyes and a wide, toothy grin. The character is wearing a sports jersey with the number \"10\" on it, along with white shorts and socks, suggesting a sports theme.\n   - The character has spiky hair and is standing with a confident posture, with one hand on their hip. The background is plain white, emphasizing the character. The character's design and attire suggest it may be a mascot or animated representation of a sports figure.\n\nThe two images appear to be unrelated in terms of content, with the top image depicting a real-life person in a natural setting and the bottom image being an animated character with a sports theme."
+      ],
+      "color": "#2e2f32",
+      "bgcolor": "#1a1b1e"
+    }
+  ],
+  "links": [
+    [
+      4,
+      5,
+      0,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      3,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      7,
+      6,
+      0,
+      5,
+      1,
+      "VIDEO_PATH"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Demo",
+      "bounding": [
+        9461.2734375,
+        3769.922119140625,
+        1065.416015625,
+        782.0592041015625
+      ],
+      "color": "#444",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9229599817706517,
+      "offset": [
+        -8999.53716495594,
+        -3687.323561268018
+      ]
+    },
+    "frontendVersion": "1.17.11",
+    "node_versions": {
+      "comfy-core": "0.3.30",
+      "comfyui-custom-scripts": "1.2.5"
+    }
+  },
+  "version": 0.4
+}

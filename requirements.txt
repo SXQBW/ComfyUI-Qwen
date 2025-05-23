@@ -1,0 +1,5 @@
+accelerate>=1.0
+huggingface-hub>=0.26.2
+torch>=2.6
+transformers>=4.51.0
+modelscope
