@@ -1,0 +1,16 @@
+[project]
+name = "ComfyUI-Qwen"
+description = "The Qwen3 ComfyUI Integration is a powerful tool designed specifically for ComfyUI workflows, aiming to seamlessly integrate Qwen series large language models (LLMs)."
+
+version = "0.1.0"
+license = {file = "LICENSE"}
+dependencies = ["accelerate>=1.0", "huggingface-hub>=0.26.2", "torch>=2.6", "transformers>=4.51.0", "modelscope"]
+
+[project.urls]
+Repository = "https://github.com/SXQBW/ComfyUI-Qwen"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "sxqbw"
+DisplayName = "ComfyUI-Qwen"
+Icon = ""
