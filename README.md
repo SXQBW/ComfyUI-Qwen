@@ -2,7 +2,7 @@
 
 # ComfyUI-Qwen 🐼
 <p align="center">
-        <a href="README.md">English</a> &nbsp｜ &nbsp 中文
+        <a href="README_zh.md">中文</a> &nbsp｜ &nbsp English
 </p>
 
 **Where Figma meets VSCode: Artistic vision meets engineering precision —— a romantic manifesto from designers to the code world.**  
