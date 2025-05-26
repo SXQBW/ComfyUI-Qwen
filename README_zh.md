@@ -12,7 +12,7 @@
 [![Model Download](https://img.shields.io/badge/Model_Download-6DB33F?style=for-the-badge&logo=ipfs&logoColor=white)](https://huggingface.co/Qwen)
 </div>
 <div align="center">
-  <img src="pic/screenshot-20250523-180706.png" width="90%">
+  <img src="pic/ComfyUI_00086_.png" width="90%">
 </div>
 
 ---
@@ -72,9 +72,12 @@
 此节点专注于单次文本生成，适合文生图如Flux提示词优化、文本扩展等任务：
 
 单轮生成节点示例 1
+
+
 ![alt text](pic/demo-screenshot-20250523-124950.png)
 
 单轮生成节点示例 2
+
 ![alt text](pic/demo3_screenshot-20250526-100723.png)
 
 1. 选择模型版本

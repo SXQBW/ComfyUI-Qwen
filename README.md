@@ -12,7 +12,7 @@
 [![Model Download](https://img.shields.io/badge/Model_Download-6DB33F?style=for-the-badge&logo=ipfs&logoColor=white)](https://huggingface.co/Qwen)
 </div>
 <div align="center">
-  <img src="pic/screenshot-20250523-180706.png" width="90%">
+  <img src="pic/ComfyUI_00086_.png" width="90%">
 </div>
 
 ---
@@ -52,9 +52,15 @@ At the intersection of creativity and technology, ComfyUI-Qwen serves as your in
 This node supports full multi-turn conversations, maintaining conversation history, suitable for chatbot applications and prompt expansion in image generation workflows:
 
 ![alt text](pic/demo1_screenshot-20250526-091723.png)
+
 Prompt expansion result 1 for Flux image generation
+
 ![alt text](pic/ComfyUI_00030_.png)
+
+
+
 Prompt expansion result 2 for Flux image generation
+
 ![alt text](pic/ComfyUI_00080_.png)
 
 1. Select the model version (Qwen3-7B recommended by default)
@@ -68,11 +74,13 @@ Prompt expansion result 2 for Flux image generation
 
 This node focuses on single text generation, suitable for prompt engineering, text expansion, and other tasks:
 
-![alt text](pic/demo-screenshot-20250523-124950.png)
 Single-turn generation node example 1
 
-![alt text](pic/demo3_screenshot-20250526-100723.png)
+![alt text](pic/demo-screenshot-20250523-124950.png)
+
 Single-turn generation node example 2
+![alt text](pic/demo3_screenshot-20250526-100723.png)
+
 
 1. Select the model version
 2. Choose the quantization level
